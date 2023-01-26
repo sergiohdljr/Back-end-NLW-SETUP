@@ -9,6 +9,8 @@ const app = Fastify()
 app.register(cors)
 app.register(appRoutes)
 
+const port = process.env.PORT || 3333;
+
 
 app.listen({
     port: 3333,
